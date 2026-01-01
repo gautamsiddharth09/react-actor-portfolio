@@ -1,0 +1,158 @@
+.navbar{
+  height: 5rem;
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+
+}
+
+.logo{
+  object-fit: cover;
+  height: 5rem;
+  width: 6rem;
+}
+
+.desktopMenuListItem{
+  margin: 1rem;
+  cursor: pointer;
+
+}
+
+.desktopMenuListItem:hover {
+ color: #ffcc00;
+ padding-bottom: 0.5rem;
+ border-bottom: 3px solid yellow;
+}
+
+.desktopMenuBtn{
+  background: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem;
+  border-radius: 2rem;
+  gap: 1rem;
+  cursor: pointer;
+  
+}
+.desktopMenuBtn:hover{
+  background: #ffcc00;
+}
+
+
+/* for mobile */
+.desktopMenuBtn:active {
+  background: #ffcc00; /* tap feedback color */
+  transform: scale(0.97); /* small shrink effect */
+}
+
+
+
+.desktopMenuImg{
+width: 1rem;
+}
+
+.active{
+  color: yellow;
+}
+
+
+/* css fir burger menu */
+
+/* Burger Icon */
+.menu {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Menu Wrapper */
+.navMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 260px;
+  background: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  z-index: 1000;
+  animation: slideIn 0.35s ease forwards;
+}
+
+/* Slide animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Menu Links */
+.ListItem {
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.ListItem::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #f5c518; /* premium yellow */
+  transition: width 0.3s ease;
+}
+
+.ListItem:hover::after {
+  width: 100%;
+}
+
+/* Active Link */
+.active {
+  color: #f5c518;
+}
+
+
+.menu{
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+}
+
+@media screen and (max-width:720px) {
+  .menu{
+    display: flex;
+  }
+  .desktopMenu{
+    display: none;
+  }
+  .desktopMenuBtn{
+    display: none;
+  }
+}

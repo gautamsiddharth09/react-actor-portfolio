@@ -1,0 +1,191 @@
+#about {
+  min-height: 100vh;
+  color: #eaeaea;
+  font-family: "Poppins", sans-serif;
+  padding: 6rem 2rem;
+}
+
+.aboutLuxury {
+  max-width: 950px;
+  margin: auto;
+  display: flex;
+  gap: 3rem;
+  position: relative;
+}
+
+/* Gold Accent Line */
+.accentLine {
+  width: 3px;
+  background: linear-gradient(#facc15, transparent);
+}
+
+/* Main Content */
+.aboutContent {
+  max-width: 850px;
+}
+
+/* Name */
+.actorName {
+  font-size: 3.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.actorName span {
+  color: #ffcc00;
+}
+
+/* Tagline */
+.actorTagline {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #999;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Stats */
+.actorStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.actorStats div {
+  border-bottom: 1px solid rgba(250, 204, 21, 0.3);
+  padding-bottom: 0.8rem;
+}
+
+.actorStats span {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #aaa;
+}
+
+.actorStats h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Bio Text */
+.actorBio p {
+  font-size: 1.05rem;
+  line-height: 2;
+  margin-bottom: 1.6rem;
+  color: #d2d2d2;
+}
+
+.actorBio strong {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Quote */
+.actorQuote {
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #facc15;
+  letter-spacing: 1px;
+}
+
+.collegeName {
+  color: #facc15;
+}
+
+
+/* About / Credits Section */
+.credits {
+  max-width: 700px;
+  margin-top: 2rem;
+}
+
+/* Section headings */
+.credits h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color:  #facc15; /* premium yellow */
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* List styling */
+.credits ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* Individual credit items */
+.credits li {
+  
+  margin-bottom: 6px;
+  position: relative;
+  padding-left: 14px;
+}
+
+/* Small bullet dot */
+.credits li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color:  #facc15;
+  font-size: 1.2rem;
+}
+
+/* Mobile friendly */
+@media (max-width: 375px) {
+  .credits h3 {
+    font-size: 1.1rem;
+  }
+
+  .credits li {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+/* Smooth Entrance */
+#about {
+  animation: cinematicFade 1.4s ease;
+}
+
+@keyframes cinematicFade {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 900px) {
+  .aboutLuxury {
+    flex-direction: column;
+  }
+
+  .accentLine {
+    height: 3px;
+    width: 100%;
+  }
+
+  .actorName {
+    font-size: 2.6rem;
+  }
+
+  .actorStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+

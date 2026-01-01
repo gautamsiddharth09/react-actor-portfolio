@@ -1,0 +1,119 @@
+#photos {
+  padding: 6rem 2rem;
+  /* background: #050505; */
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.photosTitle {
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.photosTitle span {
+  color: #ffcc00;
+}
+
+/* GRID */
+.photosGrid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+
+/* SAME SIZE – PERFECT FIT */
+.photoBox {
+  aspect-ratio: 3 / 4; /* 🔥 SAME SIZE FOR ALL */
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+  background: #000;
+  
+}
+
+.photoBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 🔥 PROPER FIT */
+  object-position: top;
+  transition: transform 0.6s ease;
+}
+
+.photoBox:hover img {
+  transform: scale(1.08);
+}
+
+/* SEE MORE */
+.photosBtnWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.seeMoreBtn {
+  background: transparent;
+  color: #facc15;
+  border: 1px solid rgba(250, 204, 21, 0.5);
+  padding: 0.8rem 2.5rem;
+  border-radius: 3rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.seeMoreBtn:hover {
+  background: #facc15;
+  color: #000;
+}
+
+/* for mobile tap */
+.seeMoreBtn:active {
+  background: #facc15; /* yellow background like hover */
+  color: #000;          /* text turns black */
+  transform: scale(0.97); /* slight shrink effect */
+  transition: all 0.1s ease; /* smooth tap feedback */
+}
+
+
+/* FULL SCREEN MODAL */
+.photoModal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.photoModal img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+/* CLOSE */
+.closeBtn {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2.5rem;
+  color: #facc15;
+  cursor: pointer;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 900px) {
+  .photosGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .photosGrid {
+    grid-template-columns: 1fr;
+  }
+}
