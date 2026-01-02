@@ -159,12 +159,14 @@
 .whatsappBtn {
   background-color: #25d366;
   color: white;
+  cursor: pointer;
 }
 
 /* Call */
 .callBtn {
   background-color: #0a66c2;
   color: white;
+  cursor: pointer;
 }
 
 /* Hover effect */
