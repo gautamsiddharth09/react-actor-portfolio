@@ -5,7 +5,7 @@ const videos = [
 
   {
     id: 0,
-    title: "Audition - Digitak Ad",
+    title: "Digitak Ad",
     url: "https://www.youtube.com/embed/lw8C_pIg5ZU",
   },
 
