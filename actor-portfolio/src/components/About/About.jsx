@@ -80,7 +80,7 @@ const About = () => {
 
             <p>
               Alongside acting, my passion for{" "}
-              <strong>reading and writing</strong>
+              <strong>reading and writing </strong>
               allows me to approach scripts with deeper emotional and narrative
               understanding.
             </p>
