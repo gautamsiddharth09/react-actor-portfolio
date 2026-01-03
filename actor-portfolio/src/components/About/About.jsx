@@ -59,6 +59,11 @@ const About = () => {
     <li>Aadarsh Bal Vidyalaya</li>
   </ul>
 
+  <h3>Digital Advertising Work</h3>
+  <ul>
+    <li>For English Mobile Application</li>
+  </ul>
+
   <h3>Television Shows</h3>
   <ul>
     <li>Yeh Rishta Kya Kehlata Hai</li>

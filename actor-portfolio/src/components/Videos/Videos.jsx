@@ -2,11 +2,20 @@ import React, { useState } from "react";
 import "./Videos.css";
 
 const videos = [
+
+  {
+    id: 0,
+    title: "Audition - Digitak Ad",
+    url: "https://youtube.com/shorts/lw8C_pIg5ZU?si=-i8enebe0e4big2O",
+  },
+
   {
     id: 1,
     title: "Audition - Comedy",
     url: "https://www.youtube.com/embed/CiRoak-o8Z0",
   },
+  
+
   {
     id: 2,
     title: "Bank Employee",
