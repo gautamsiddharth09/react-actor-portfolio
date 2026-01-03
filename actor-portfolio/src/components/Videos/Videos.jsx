@@ -6,7 +6,7 @@ const videos = [
   {
     id: 0,
     title: "Audition - Digitak Ad",
-    url: "https://youtube.com/shorts/lw8C_pIg5ZU?si=-i8enebe0e4big2O",
+    url: "https://www.youtube.com/embed/lw8C_pIg5ZU",
   },
 
   {
