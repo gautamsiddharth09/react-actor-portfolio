@@ -55,12 +55,14 @@ const About = () => {
             <div className="credits">
   <h3>I have featured in web series such as</h3>
   <ul>
+    <li>Vimal khanna webseries - Shared Screen with Sunny Hinduja</li>
     <li>Heart of Darkness</li>
     <li>Aadarsh Bal Vidyalaya</li>
   </ul>
 
   <h3>Digital Advertising Work</h3>
   <ul>
+    <li>Moneyview Digital ad</li>
     <li>For English Mobile Application</li>
   </ul>
 

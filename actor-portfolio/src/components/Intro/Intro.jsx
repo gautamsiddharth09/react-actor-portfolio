@@ -1,6 +1,6 @@
 import React from "react";
 import "./Intro.css";
-import heroImage from "../../assets/heroImage.png";
+import animeshProfile from "../../assets/animeshProfile.png";
 
 const Intro = () => {
 
@@ -49,8 +49,8 @@ const Intro = () => {
       </div>
 
        <img
-        src={heroImage}
-        alt="Animesh Mishra Actor Portrait"
+        src={animeshProfile}
+        alt="Animesh Mishra Actor Picture"
         className="heroImage"
         loading="lazy"
       />
