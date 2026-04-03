@@ -21,14 +21,13 @@
 .heroImage {
   position: absolute;
   top: 2rem;
-  right: 0;       
-  height: 90vh;    
-  width: 650px;   
+  right: 0;
+  height: 90vh;
+  width: 650px;
   object-fit: contain;
   z-index: -1;
   cursor: pointer;
 }
-
 
 .introContent {
   height: 100vh;
@@ -88,7 +87,8 @@
 
 @media screen and (max-width: 680px) {
   .heroImage {
-    right: 10vw;
+    right: 0;
+    width: 500px;
   }
 
   .introContent {
@@ -112,7 +112,10 @@
 
 @media screen and (max-width: 475px) {
   .heroImage {
-    right: 0vw;
+    right: 5vw;
+    height: 90vh;
+    width: 410px;
+    top: 3rem;
   }
 
   .introContent {
