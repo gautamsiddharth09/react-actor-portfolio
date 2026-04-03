@@ -6,15 +6,29 @@
   overflow: hidden;
   position: relative;
 }
-
-.heroImage {
+/* 
+ .heroImage {
   position: absolute;
   top: 5rem;
   right: 0;
   height: 80vh;
   object-fit: contain;
   z-index: -1;
+  width: 550px;
+  cursor: pointer;
+}  */
+
+.heroImage {
+  position: absolute;
+  top: 2rem;
+  right: 0;       
+  height: 90vh;    
+  width: 650px;   
+  object-fit: contain;
+  z-index: -1;
+  cursor: pointer;
 }
+
 
 .introContent {
   height: 100vh;

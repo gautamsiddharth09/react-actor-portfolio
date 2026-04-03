@@ -1,6 +1,7 @@
 import React from "react";
 import "./Intro.css";
-import animeshProfile from "../../assets/animeshProfile.png";
+import animeshProfile from "../../assets/animesh_heroo.png";
+// import animeshProfile from "../../assets/animeshProfile.png";
 
 const Intro = () => {
 
