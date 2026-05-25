@@ -4,54 +4,64 @@ import "./Videos.css";
 const videos = [
   {
     id: 0,
+    title: "Webseries Vimal Khanna",
+    url: "https://drive.google.com/file/d/1KMmP1ffVHgF7mfyR7taw-pEkWcrSQRSu/preview",
+  },
+  {
+    id: 1,
+    title: "Paisa Bazar TVC ad",
+    url: "https://drive.google.com/file/d/1TyokKdlssXSPEzew2mZmCdwQWMYrx8qV/preview",
+  },
+  {
+    id: 2,
     title: "Moneyview Digital ad",
     url: "https://www.youtube.com/embed/HWzyNiLBLzc",
   },
 
   {
-    id: 1,
+    id: 3,
     title: "Digitak Ad",
     url: "https://www.youtube.com/embed/lw8C_pIg5ZU",
   },
 
   {
-    id: 2,
+    id: 4,
     title: "Audition - Comedy",
     url: "https://www.youtube.com/embed/CiRoak-o8Z0",
   },
 
   {
-    id: 3,
+    id: 5,
     title: "Bank Employee",
     url: "https://www.youtube.com/embed/wR0sYW1NHBQ",
   },
   {
-    id: 4,
+    id: 6,
     title: "Cop",
     url: "https://www.youtube.com/embed/TPX0ar0nK60",
   },
   {
-    id: 5,
+    id: 7,
     title: "Gunda",
     url: "https://www.youtube.com/embed/mEH2qpirTSE",
   },
   {
-    id: 6,
+    id: 8,
     title: "Lokendra Negative",
     url: "https://www.youtube.com/embed/X4aU4ibykeA",
   },
   {
-    id: 7,
+    id: 9,
     title: "Raju Villager",
     url: "https://www.youtube.com/embed/ZRlNmFxrf4A",
   },
   {
-    id: 8,
+    id: 10,
     title: "Work Link Vertical",
     url: "https://www.youtube.com/embed/uDwGfszxrVw",
   },
   {
-    id: 9,
+    id: 11,
     title: "Digital Ad",
     url: "https://www.youtube.com/embed/dyTCx8c4g0Y",
   },

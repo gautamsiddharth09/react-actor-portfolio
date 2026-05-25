@@ -62,8 +62,9 @@ const About = () => {
 
   <h3>Digital Advertising Work</h3>
   <ul>
-    <li>Moneyview Digital ad</li>
-    <li>For English Mobile Application</li>
+    <li>Moneyview Digital Ad</li>
+    <li>Paisabazar TVC Ad</li>
+    <li>For English Mobile Application Ad</li>
   </ul>
 
   <h3>Television Shows</h3>

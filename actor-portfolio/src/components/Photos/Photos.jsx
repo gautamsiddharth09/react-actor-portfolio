@@ -9,8 +9,9 @@ import p3 from "../../assets/three.jpg";
 import p4 from "../../assets/four.jpg";
 import p5 from "../../assets/five.jpg";
 import p6 from "../../assets/six.jpg";
+import p7 from "../../assets/seven.jpeg";
 
-const photos = [p0,p1, p2, p3, p4, p5, p6,];
+const photos = [p0,p1, p2, p3, p4, p5, p6, p7];
 
 const Photos = () => {
   const [selectedImg, setSelectedImg] = useState(null);
