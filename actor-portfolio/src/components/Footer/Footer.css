@@ -1,21 +1,15 @@
 .miniFooter {
   width: 100%;
-  padding: 1.5rem 1rem;
-  background: #111111;
-  color: rgba(255, 255, 255, 0.6);
+  padding: 1.35rem 1rem;
+  margin-top: 1rem;
+  background: linear-gradient(180deg, rgba(5, 8, 22, 0.94), rgba(3, 6, 15, 1));
+  color: rgba(255, 255, 255, 0.7);
   text-align: center;
   font-size: 0.85rem;
-  letter-spacing: 0.5px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  letter-spacing: 0.05em;
+  border-top: 1px solid rgba(245, 197, 24, 0.12);
 }
 
-/* subtle premium hover */
-.miniFooter:hover {
-  color: #facc15;
-  transition: color 0.3s ease;
-}
-
-/* 📱 Mobile polish */
 @media (max-width: 600px) {
   .miniFooter {
     font-size: 0.8rem;

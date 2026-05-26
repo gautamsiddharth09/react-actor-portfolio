@@ -3,6 +3,7 @@ import "./Contact.css";
 import instagramIcon from "../../assets/instagram.png";
 import YoutubeIcon from "../../assets/youtube.png";
 import emailjs from "@emailjs/browser";
+import { trackEvent } from "../../analytics";
 
 const Contact = () => {
   const form = useRef();
@@ -11,8 +12,11 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    trackEvent("contact_submit", {
+      event_category: "contact",
+      event_label: "form_submit",
+    });
 
-    // Start loading animation
     setLoading(true);
 
     emailjs
@@ -20,20 +24,28 @@ const Contact = () => {
         "service_z19z4kd",
         "template_2tm3l0z",
         form.current,
-        "eTc5--PLCKqbgFsJy"
+        "eTc5--PLCKqbgFsJy",
       )
       .then(
         () => {
           setLoading(false);
-          setSuccess(true); // Show success message
+          setSuccess(true);
+          trackEvent("contact_success", { event_category: "contact" });
           form.current.reset();
         },
         (error) => {
           setLoading(false);
           alert("❌ Failed to send email");
           console.log(error.text);
-        }
+        },
       );
+  };
+
+  const handleContactClick = (label) => {
+    trackEvent("contact_click", {
+      event_category: "contact",
+      event_label: label,
+    });
   };
 
   return (
@@ -82,23 +94,22 @@ const Contact = () => {
         )}
 
         <div className="links">
-          <div className="links">
-          
-            <a
-              href="https://www.instagram.com/animeshmishra.here?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={instagramIcon} alt="instagram" className="link" />
-            </a>
-            <a
-              href="https://www.youtube.com/@AnimeshMishra-123"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={YoutubeIcon} alt="youtube" className="link" />
-            </a>
-          </div>
+          <a
+            href="https://www.instagram.com/animeshmishra.here?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => handleContactClick("instagram")}
+          >
+            <img src={instagramIcon} alt="instagram" className="link" />
+          </a>
+          <a
+            href="https://www.youtube.com/@AnimeshMishra-123"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => handleContactClick("youtube")}
+          >
+            <img src={YoutubeIcon} alt="youtube" className="link" />
+          </a>
         </div>
       </form>
     </div>

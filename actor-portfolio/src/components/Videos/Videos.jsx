@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Videos.css";
+import { trackEvent } from "../../analytics";
 
 const videos = [
   {
@@ -17,19 +18,16 @@ const videos = [
     title: "Moneyview Digital ad",
     url: "https://www.youtube.com/embed/HWzyNiLBLzc",
   },
-
   {
     id: 3,
     title: "Digitak Ad",
     url: "https://www.youtube.com/embed/lw8C_pIg5ZU",
   },
-
   {
     id: 4,
     title: "Audition - Comedy",
     url: "https://www.youtube.com/embed/CiRoak-o8Z0",
   },
-
   {
     id: 5,
     title: "Bank Employee",
@@ -73,39 +71,57 @@ const Videos = () => {
 
   const visibleVideos = showAll ? videos : videos.slice(0, 4);
 
+  const handleVideoClick = (video) => {
+    setActiveVideo(video.url);
+    trackEvent("video_click", {
+      event_category: "videos",
+      event_label: video.title,
+    });
+  };
+
+  const handleToggleSeeMore = () => {
+    setShowAll((prev) => !prev);
+    trackEvent("video_gallery_toggle", {
+      event_category: "videos",
+      event_label: showAll ? "show_less" : "show_more",
+    });
+  };
+
   return (
     <section id="videos">
       <h2 className="videosTitle">
         Work <span>Videos</span>
       </h2>
 
-      {/* GRID */}
       <div className="videosGrid">
         {visibleVideos.map((video) => (
           <div
             className="videoBox"
             key={video.id}
-            onClick={() => setActiveVideo(video.url)}
+            onClick={() => handleVideoClick(video)}
           >
-            <iframe
-              src={video.url + "?rel=0"}
-              title={video.title}
-              allow="autoplay; encrypted-media; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-            <p className="videoLabel">{video.title}</p>
+            <div className="videoInner">
+              <iframe
+                src={video.url + "?rel=0"}
+                title={video.title}
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="videoMeta">
+              <p className="videoLabel">{video.title}</p>
+              <span className="videoBadge">Preview</span>
+            </div>
           </div>
         ))}
       </div>
 
-      {/* SEE MORE */}
       <div className="videosBtnWrap">
-        <button className="seeMoreBtn" onClick={() => setShowAll(!showAll)}>
+        <button className="seeMoreBtn" onClick={handleToggleSeeMore}>
           {showAll ? "Show Less" : "See More"}
         </button>
       </div>
 
-      {/* FULL SCREEN MODAL */}
       {activeVideo && (
         <div className="videoModal">
           <span className="closeBtn" onClick={() => setActiveVideo(null)}>

@@ -1,90 +1,106 @@
-.navbar{
+.navbar {
   height: 5rem;
-  width: 100vw;
-  max-width: 75rem;
+  width: min(1200px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0.85rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
-  top: 0;
-  z-index: 3;
-
+  top: 0.75rem;
+  z-index: 10;
+  border: 1px solid rgba(245, 197, 24, 0.14);
+  border-radius: 999px;
+  background: rgba(5, 8, 22, 0.8);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
 }
 
-.logo{
+.logo {
   object-fit: cover;
-  height: 5rem;
-  width: 6rem;
+  height: 3.9rem;
+  width: 4.8rem;
+  filter: drop-shadow(0 10px 20px rgba(245, 197, 24, 0.18));
 }
 
-.desktopMenuListItem{
-  margin: 1rem;
-  cursor: pointer;
+.desktopMenu {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
 
+.desktopMenuListItem {
+  margin: 0 0.75rem;
+  cursor: pointer;
+  color: #f5f7fb;
+  font-size: 0.98rem;
+  letter-spacing: 0.02em;
+  transition:
+    color 0.25s ease,
+    transform 0.2s ease;
 }
 
 .desktopMenuListItem:hover {
- color: #ffcc00;
- padding-bottom: 0.5rem;
- border-bottom: 3px solid yellow;
+  color: #f5c518;
+  transform: translateY(-1px);
 }
 
-.desktopMenuBtn{
-  background: white;
-  color: black;
+.desktopMenuBtn {
+  background: linear-gradient(135deg, #f5c518, #ffd84d);
+  color: #111;
   border: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.6rem;
-  border-radius: 2rem;
-  gap: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  gap: 0.75rem;
   cursor: pointer;
-  
-}
-.desktopMenuBtn:hover{
-  background: #ffcc00;
+  font-weight: 700;
+  box-shadow: 0 14px 35px rgba(245, 197, 24, 0.2);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
 }
 
+.desktopMenuBtn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+  box-shadow: 0 18px 42px rgba(245, 197, 24, 0.28);
+}
 
-/* for mobile */
 .desktopMenuBtn:active {
-  background: #ffcc00; /* tap feedback color */
-  transform: scale(0.97); /* small shrink effect */
+  transform: scale(0.98);
 }
 
-
-
-.desktopMenuImg{
-width: 1rem;
+.desktopMenuImg {
+  width: 1rem;
 }
 
-.active{
-  color: yellow;
+.active {
+  color: #f5c518;
 }
 
-
-/* css fir burger menu */
-
-/* Burger Icon */
 .menu {
   width: 32px;
   height: 32px;
   cursor: pointer;
   z-index: 1001;
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
 }
 
-/* Menu Wrapper */
 .navMenu {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
-  width: 260px;
-  background: rgba(15, 15, 15, 0.95);
-  backdrop-filter: blur(8px);
+  width: 280px;
+  background: rgba(8, 10, 21, 0.98);
+  backdrop-filter: blur(16px);
+  border-left: 1px solid rgba(245, 197, 24, 0.16);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,7 +110,6 @@ width: 1rem;
   animation: slideIn 0.35s ease forwards;
 }
 
-/* Slide animation */
 @keyframes slideIn {
   from {
     transform: translateX(100%);
@@ -106,18 +121,16 @@ width: 1rem;
   }
 }
 
-/* Menu Links */
 .ListItem {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  letter-spacing: 1px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   position: relative;
-  transition: all 0.3s ease;
+  transition: color 0.25s ease;
 }
 
-/* Hover Effect */
 .ListItem::after {
   content: "";
   position: absolute;
@@ -125,34 +138,33 @@ width: 1rem;
   bottom: -6px;
   width: 0;
   height: 2px;
-  background: #f5c518; /* premium yellow */
+  background: linear-gradient(90deg, #f5c518, #ffd84d);
   transition: width 0.3s ease;
+}
+
+.ListItem:hover {
+  color: #f5c518;
 }
 
 .ListItem:hover::after {
   width: 100%;
 }
 
-/* Active Link */
-.active {
-  color: #f5c518;
-}
+@media screen and (max-width: 820px) {
+  .navbar {
+    width: min(100%, calc(100% - 1.25rem));
+    border-radius: 1.5rem;
+  }
 
-
-.menu{
-  display: none;
-  object-fit: cover;
-  height: 1.8rem;
-}
-
-@media screen and (max-width:720px) {
-  .menu{
+  .menu {
     display: flex;
   }
-  .desktopMenu{
+
+  .desktopMenu {
     display: none;
   }
-  .desktopMenuBtn{
+
+  .desktopMenuBtn {
     display: none;
   }
 }

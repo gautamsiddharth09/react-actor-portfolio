@@ -1,0 +1,88 @@
+:root {
+  color-scheme: dark;
+  --bg: #050816;
+  --bg-soft: rgba(13, 17, 33, 0.92);
+  --panel: rgba(14, 18, 32, 0.88);
+  --panel-strong: rgba(28, 33, 57, 0.9);
+  --text: #f7f8fc;
+  --muted: #b8bed3;
+  --accent: #f5c518;
+  --accent-soft: rgba(245, 197, 24, 0.18);
+  --line: rgba(245, 197, 24, 0.24);
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  --radius: 28px;
+  font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(245, 197, 24, 0.14),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(114, 83, 255, 0.12),
+      transparent 22%
+    ),
+    linear-gradient(180deg, #050816 0%, #090d1a 55%, #04070f 100%);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: transparent;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: rgba(245, 197, 24, 0.35);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #03060f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(245, 197, 24, 0.9),
+    rgba(251, 208, 82, 0.4)
+  );
+  border-radius: 999px;
+}
+
+section {
+  position: relative;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgba(245, 197, 24, 0.02));
+}

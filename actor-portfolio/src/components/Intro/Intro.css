@@ -1,202 +1,170 @@
 #intro {
-  height: calc(100vh - 4rem);
-  width: 100vw;
-  max-width: 75rem;
-  margin: 0 auto;
-  overflow: hidden;
+  width: min(1200px, calc(100% - 2rem));
+  margin: 1.5rem auto 0;
+  min-height: calc(100vh - 7.5rem);
+  padding: 1.5rem 0 3rem;
   position: relative;
+  overflow: hidden;
 }
-/* 
- .heroImage {
-  position: absolute;
-  top: 5rem;
-  right: 0;
-  height: 80vh;
-  object-fit: contain;
-  z-index: -1;
-  width: 550px;
-  cursor: pointer;
-}  */
 
-.heroImage {
+#intro::after {
+  content: "";
   position: absolute;
-  top: 2rem;
-  right: 0;
-  height: 90vh;
-  width: 650px;
-  object-fit: contain;
-  z-index: -1;
-  cursor: pointer;
+  inset: 0;
+  border-radius: 34px;
+  background:
+    linear-gradient(135deg, rgba(245, 197, 24, 0.12), transparent 35%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+  pointer-events: none;
 }
 
 .introContent {
-  height: 100vh;
-  width: 100vw;
-  padding: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  min-height: calc(100vh - 8rem);
+  padding: 2.5rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  max-width: 42rem;
+  gap: 1.2rem;
 }
 
 .hello {
-  font-size: 1.75rem;
-  font-weight: 100;
+  font-size: 1.15rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #dbe0f7;
+  opacity: 0.84;
+}
+
+.introText {
+  display: block;
+  font-size: clamp(2.6rem, 4vw, 3.6rem);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.04em;
 }
 
 .introName {
-  color: #ffcc00;
+  color: #f5c518;
+  display: inline-block;
+  margin-left: 0.7rem;
 }
 
 .introPara {
-  font-size: medium;
-  font-weight: 300;
-  letter-spacing: 1px;
+  max-width: 40rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #d7ddf5;
+  margin: 0;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.4rem;
+  flex-wrap: wrap;
 }
 
 .btn {
-  background: white;
-  margin: 1rem 0;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 2rem;
+  border: 0;
+  padding: 0.95rem 1.35rem;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
 }
 
-.btnImage {
-  object-fit: cover;
-  margin: 0 0.25rem;
-  height: 1rem;
+.btn:hover {
+  transform: translateY(-1px);
 }
 
-/* media */
-@media screen and (max-width: 840px) {
-  .heroImage {
-    right: 10vw;
+.btn:active {
+  transform: scale(0.98);
+}
+
+.whatsappBtn {
+  background: linear-gradient(135deg, #25d366, #1fb85c);
+  color: #fff;
+  box-shadow: 0 20px 40px rgba(37, 211, 102, 0.22);
+}
+
+.callBtn {
+  background: linear-gradient(135deg, #0a66c2, #1d7ff2);
+  color: #fff;
+  box-shadow: 0 20px 40px rgba(10, 102, 194, 0.2);
+}
+
+.heroImage {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(40vw, 560px);
+  max-height: 86vh;
+  object-fit: contain;
+  filter: drop-shadow(0 34px 60px rgba(0, 0, 0, 0.45));
+  border-radius: 28px;
+  z-index: 0;
+}
+
+.heroImage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.28));
+}
+
+@media screen and (max-width: 980px) {
+  #intro {
+    min-height: auto;
   }
 
   .introContent {
-    font-size: 2.5rem;
+    min-height: auto;
+    padding-top: 3rem;
+    padding-bottom: 4.5rem;
   }
-  .hello {
-    font-size: 1.75rem;
+
+  .heroImage {
+    position: static;
+    transform: none;
+    width: min(90%, 480px);
+    margin: 1rem auto 0;
+    display: block;
   }
 }
 
 @media screen and (max-width: 680px) {
-  .heroImage {
-    right: 0;
-    width: 500px;
+  #intro {
+    width: min(100%, calc(100% - 1rem));
+    margin-top: 0.75rem;
   }
 
   .introContent {
-    margin-top: 2rem;
-  }
-  .hello {
-    font-size: 1.75rem;
+    padding: 1.5rem 1rem 3rem;
   }
 
-  .introContent {
-    height: 100vh;
-    width: 100vw;
-    padding: 2rem;
-    font-size: 2rem;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 475px) {
-  .heroImage {
-    right: 5vw;
-    height: 90vh;
-    width: 410px;
-    top: 3rem;
+  .introText {
+    font-size: clamp(2.2rem, 11vw, 2.8rem);
   }
 
-  .introContent {
-    margin-top: 1rem;
-  }
-  .hello {
-    font-size: 1rem;
-  }
-
-  .introContent {
-    height: 100vh;
-    width: 100vw;
-    padding: 2rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
   .introPara {
-    font-weight: 400;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .heroImage {
-    right: 0vw;
-  }
-
-  .hello {
     font-size: 1rem;
   }
 
-  .introContent {
-    height: 100vh;
-    width: 100vw;
-    padding: 2rem;
-    font-size: 1rem;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
+  .btnGroup {
+    gap: 0.75rem;
+  }
+
+  .btn {
+    width: 100%;
     justify-content: center;
   }
-  .introPara {
-    font-weight: 400;
-  }
-}
-
-/* for whats app and call */
-.btnGroup {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-
-/* WhatsApp */
-.whatsappBtn {
-  background-color: #25d366;
-  color: white;
-  cursor: pointer;
-}
-
-/* Call */
-.callBtn {
-  background-color: #0a66c2;
-  color: white;
-  cursor: pointer;
-}
-
-/* Hover effect */
-.whatsappBtn:hover,
-.callBtn:hover {
-  transform: scale(1.05);
-  transition: 0.2s ease;
-}
-
-/* Mobile responsiveness */
-.whatsappBtn:active,
-.callBtn:active {
-  transform: scale(0.97);
-  opacity: 0.9;
-  transition: 0.1s ease;
 }

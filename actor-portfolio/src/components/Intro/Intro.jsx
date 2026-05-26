@@ -4,7 +4,6 @@ import animeshProfile from "../../assets/animesh_heroo.png";
 // import animeshProfile from "../../assets/animeshProfile.png";
 
 const Intro = () => {
-
   // WhatsApp Function
   const openWhatsApp = () => {
     const msg =
@@ -13,7 +12,7 @@ const Intro = () => {
     window.open(url, "_blank");
   };
 
-  //  Call Function 
+  //  Call Function
   const makeCall = () => {
     const phoneNumber = "916394604267";
     window.open(`tel:${phoneNumber}`);
@@ -26,7 +25,7 @@ const Intro = () => {
 
         <span className="introText">
           I'm
-          <span className="introName"> Animesh Mishra</span>
+          <span className="introName">Animesh Mishra</span>
           <br />
           Actor
         </span>
@@ -38,18 +37,26 @@ const Intro = () => {
 
         <div className="btnGroup">
           {/* WhatsApp Button */}
-          <button className="btn whatsappBtn" onClick={openWhatsApp} aria-label="Chat with Animesh Mishra on WhatsApp">
+          <button
+            className="btn whatsappBtn"
+            onClick={openWhatsApp}
+            aria-label="Chat with Animesh Mishra on WhatsApp"
+          >
             📲 WhatsApp
           </button>
 
           {/* Call Button */}
-          <button className="btn callBtn" onClick={makeCall}  aria-label="Call Animesh Mishra">
+          <button
+            className="btn callBtn"
+            onClick={makeCall}
+            aria-label="Call Animesh Mishra"
+          >
             📞 Call Me
           </button>
         </div>
       </div>
 
-       <img
+      <img
         src={animeshProfile}
         alt="Animesh Mishra Actor Picture"
         className="heroImage"
