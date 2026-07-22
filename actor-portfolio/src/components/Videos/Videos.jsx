@@ -5,63 +5,88 @@ import { trackEvent } from "../../analytics";
 const videos = [
   {
     id: 0,
+    title: "Introduction",
+    url: "https://www.youtube.com/embed/cDbQSDULL3g",
+  },
+  {
+    id: 1,
     title: "Webseries Vimal Khanna",
     url: "https://drive.google.com/file/d/1KMmP1ffVHgF7mfyR7taw-pEkWcrSQRSu/preview",
   },
   {
-    id: 1,
+    id: 2,
+    title: "Webseries Raakh",
+    url: "https://drive.google.com/file/d/1qmCllUpx_Z9aK-OWegf8ah7bsZeGhOxb/preview",
+  },
+  {
+    id: 3,
     title: "Paisa Bazar TVC ad",
     url: "https://drive.google.com/file/d/1TyokKdlssXSPEzew2mZmCdwQWMYrx8qV/preview",
   },
   {
-    id: 2,
+    id: 4,
     title: "Moneyview Digital ad",
     url: "https://www.youtube.com/embed/HWzyNiLBLzc",
   },
   {
-    id: 3,
+    id: 5,
     title: "Digitak Ad",
     url: "https://www.youtube.com/embed/lw8C_pIg5ZU",
   },
   {
-    id: 4,
+    id: 6,
+    title: "Audition Bhati - Comedy",
+    url: "https://www.youtube.com/embed/LjHndO4eAUM",
+  },
+  {
+    id: 7,
     title: "Audition - Comedy",
     url: "https://www.youtube.com/embed/CiRoak-o8Z0",
   },
   {
-    id: 5,
+    id: 8,
+    title: "Corporate Employee",
+    url: "https://www.youtube.com/embed/_L2Rzy9Q04s",
+  },
+  {
+    id: 9,
     title: "Bank Employee",
     url: "https://www.youtube.com/embed/wR0sYW1NHBQ",
   },
   {
-    id: 6,
+    id: 10,
     title: "Cop",
     url: "https://www.youtube.com/embed/TPX0ar0nK60",
   },
   {
-    id: 7,
+    id: 11,
     title: "Gunda",
     url: "https://www.youtube.com/embed/mEH2qpirTSE",
   },
   {
-    id: 8,
+    id: 12,
     title: "Lokendra Negative",
     url: "https://www.youtube.com/embed/X4aU4ibykeA",
   },
   {
-    id: 9,
+    id: 13,
     title: "Raju Villager",
     url: "https://www.youtube.com/embed/ZRlNmFxrf4A",
   },
   {
-    id: 10,
+    id: 14,
     title: "Work Link Vertical",
     url: "https://www.youtube.com/embed/uDwGfszxrVw",
   },
   {
-    id: 11,
+    id: 15,
     title: "Digital Ad",
     url: "https://www.youtube.com/embed/dyTCx8c4g0Y",
+  },
+  {
+    id: 16,
+    title: "सनकी पति",
+    url: "https://www.youtube.com/embed/isINNiduyE8",
   },
 ];
 

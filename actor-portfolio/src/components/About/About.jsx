@@ -53,9 +53,10 @@ const About = () => {
             </p>
 
             <div className="credits">
-  <h3>I have featured in web series such as</h3>
+  <h3>I have featured in "WEB SERIES" such as</h3>
   <ul>
     <li>Vimal khanna webseries - Shared Screen with Sunny Hinduja</li>
+    <li>Rakh webseries - Shared Screen with Ali Fazal</li>
     <li>Heart of Darkness</li>
     <li>Aadarsh Bal Vidyalaya</li>
   </ul>
