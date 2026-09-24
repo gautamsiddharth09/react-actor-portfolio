@@ -34,44 +34,40 @@ const videos = [
     url: "https://www.youtube.com/embed/lw8C_pIg5ZU",
   },
 
+
   {
     id: 6,
     title: "Bank Employee",
-    url: "https://www.youtube.com/embed/wR0sYW1NHBQ",
+    url: "https://www.youtube.com/embed/TPX0ar0nK60",
   },
   {
     id: 7,
     title: "Cop",
-    url: "https://www.youtube.com/embed/TPX0ar0nK60",
-  },
-  {
-    id: 8,
-    title: "Gunda",
     url: "https://www.youtube.com/embed/mEH2qpirTSE",
   },
   {
-    id: 9,
-    title: "Lokendra Negative",
+    id: 8,
+    title: "Gunda(Negative)",
     url: "https://www.youtube.com/embed/X4aU4ibykeA",
   },
  
   {
-    id: 10,
+    id: 9,
     title: "Digital Ad",
     url: "https://www.youtube.com/embed/dyTCx8c4g0Y",
   },
   {
-    id: 11,
+    id: 10,
     title: "Guard audition",
      url: "https://www.youtube.com/embed/TF1Fn8AYR2g",
   },
   {
-    id: 12,
+    id: 11,
     title: "Teacher audition",
       url: "https://www.youtube.com/embed/bLSAHSO6nH8",
   },
   {
-    id: 13,
+    id: 12,
     title: "Chadda Sahab Audition",
       url: "https://www.youtube.com/embed/E_yU02iGQvs",
   },
