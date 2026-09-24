@@ -33,55 +33,45 @@ const videos = [
     title: "Digitak Ad",
     url: "https://www.youtube.com/embed/lw8C_pIg5ZU",
   },
+
   {
     id: 6,
-    title: "Audition Bhati - Comedy",
-    url: "https://www.youtube.com/embed/LjHndO4eAUM",
-  },
-  
-  {
-    id: 7,
-    title: "Corporate Employee",
-    url: "https://www.youtube.com/embed/_L2Rzy9Q04s",
-  },
-  {
-    id: 8,
     title: "Bank Employee",
     url: "https://www.youtube.com/embed/wR0sYW1NHBQ",
   },
   {
-    id: 9,
+    id: 7,
     title: "Cop",
     url: "https://www.youtube.com/embed/TPX0ar0nK60",
   },
   {
-    id: 10,
+    id: 8,
     title: "Gunda",
     url: "https://www.youtube.com/embed/mEH2qpirTSE",
   },
   {
-    id: 11,
+    id: 9,
     title: "Lokendra Negative",
     url: "https://www.youtube.com/embed/X4aU4ibykeA",
   },
  
   {
-    id: 12,
+    id: 10,
     title: "Digital Ad",
     url: "https://www.youtube.com/embed/dyTCx8c4g0Y",
   },
   {
-    id: 13,
+    id: 11,
     title: "Guard audition",
      url: "https://www.youtube.com/embed/TF1Fn8AYR2g",
   },
   {
-    id: 14,
+    id: 12,
     title: "Teacher audition",
       url: "https://www.youtube.com/embed/bLSAHSO6nH8",
   },
   {
-    id: 15,
+    id: 13,
     title: "Chadda Sahab Audition",
       url: "https://www.youtube.com/embed/E_yU02iGQvs",
   },
