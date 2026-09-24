@@ -3,7 +3,7 @@ import "./Photos.css";
 
 // Replace with your real images
 import p0 from "../../assets/animesh.jpg";
-import p1 from "../../assets/one.png";
+import p1 from "../../assets/one.jpeg";
 import p2 from "../../assets/two.jpg";
 import p3 from "../../assets/three.jpg";
 import p4 from "../../assets/four.jpg";

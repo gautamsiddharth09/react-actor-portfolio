@@ -6,7 +6,7 @@ const videos = [
   {
     id: 0,
     title: "Introduction",
-    url: "https://www.youtube.com/embed/cDbQSDULL3g",
+   url: "https://www.youtube.com/embed/gTHPW2lXArE",
   },
   {
     id: 1,
@@ -38,55 +38,52 @@ const videos = [
     title: "Audition Bhati - Comedy",
     url: "https://www.youtube.com/embed/LjHndO4eAUM",
   },
+  
   {
     id: 7,
-    title: "Audition - Comedy",
-    url: "https://www.youtube.com/embed/CiRoak-o8Z0",
-  },
-  {
-    id: 8,
     title: "Corporate Employee",
     url: "https://www.youtube.com/embed/_L2Rzy9Q04s",
   },
   {
-    id: 9,
+    id: 8,
     title: "Bank Employee",
     url: "https://www.youtube.com/embed/wR0sYW1NHBQ",
   },
   {
-    id: 10,
+    id: 9,
     title: "Cop",
     url: "https://www.youtube.com/embed/TPX0ar0nK60",
   },
   {
-    id: 11,
+    id: 10,
     title: "Gunda",
     url: "https://www.youtube.com/embed/mEH2qpirTSE",
   },
   {
-    id: 12,
+    id: 11,
     title: "Lokendra Negative",
     url: "https://www.youtube.com/embed/X4aU4ibykeA",
   },
+ 
   {
-    id: 13,
-    title: "Raju Villager",
-    url: "https://www.youtube.com/embed/uDwGfszxrVw",
-  },
-  {
-    id: 14,
-    title: "Work Link Vertical",
-    url: "https://www.youtube.com/embed/uDwGfszxrVw",
-  },
-  {
-    id: 15,
+    id: 12,
     title: "Digital Ad",
     url: "https://www.youtube.com/embed/dyTCx8c4g0Y",
   },
   {
-    id: 16,
-    title: "सनकी पति",
-    url: "https://www.youtube.com/embed/isINNiduyE8",
+    id: 13,
+    title: "Guard audition",
+     url: "https://www.youtube.com/embed/TF1Fn8AYR2g",
+  },
+  {
+    id: 14,
+    title: "Teacher audition",
+      url: "https://www.youtube.com/embed/bLSAHSO6nH8",
+  },
+  {
+    id: 15,
+    title: "Chadda Sahab Audition",
+      url: "https://www.youtube.com/embed/E_yU02iGQvs",
   },
 ];
 
