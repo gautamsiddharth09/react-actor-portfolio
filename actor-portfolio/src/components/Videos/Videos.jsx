@@ -53,7 +53,7 @@ const videos = [
  
   {
     id: 9,
-    title: "Digital Ad",
+    title: "Vertical serires",
     url: "https://www.youtube.com/embed/dyTCx8c4g0Y",
   },
   {
