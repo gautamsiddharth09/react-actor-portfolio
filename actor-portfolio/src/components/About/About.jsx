@@ -59,6 +59,7 @@ const About = () => {
     <li>Rakh webseries - Shared Screen with Ali Fazal</li>
     <li>Heart of Darkness</li>
     <li>Aadarsh Bal Vidyalaya</li>
+    <li>Teen Tigada</li>
   </ul>
 
   <h3>Digital Advertising Work</h3>
